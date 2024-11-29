@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+    background-image: url('fruits.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+  }
+  h2{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 550;
+    text-align: start;
+  }
+  
+  h1 {
+    font-size: 3em;
+    color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+  }
+  .reset{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: khaki;
+  }
+  .draggableContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .box {
+    background-color: khaki;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+    cursor: grab;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Droppable area styling */
+  .droppableContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: khaki;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .droppable {
+    width: 70px;
+    height: 70px;
+    border: 1px solid khaki;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .droppable:hover {
+    border-color: khaki;
+    background-color: khaki;
+  }
+  
+  /* Image styling within droppable zones */
+  .droppable img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+  }
+  
+  /* Scoreboard and remarks styling */
+  .board {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: khaki;
+    border-radius: 10px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .board p {
+    margin: 5px 0;
+    font-size: 1.2em;
+  }
+  
+  /* Screen reader accessibility */
+  .item-label {
+    position: absolute;
+    left: -9999px;
+  }
+  
+  /* Visual feedback for correct and incorrect drops */
+  .correct {
+    background-color: #28a745 !important; /* Green for correct */
+    cursor: default;
+    padding: 10px;
+  }
+  
+  .wrong {
+    background-color: #dc3545 !important; /* Red for incorrect */
+    padding: 10px;
+  }
+  
+  /* Styling for dragged element during drag operation */
+  .draggableFormat {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Reset button styling */
+  #resetButton {
+    background-color: khaki;
+    color: khaki;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  #resetButton:hover {
+    background-color: khaki;
+  }

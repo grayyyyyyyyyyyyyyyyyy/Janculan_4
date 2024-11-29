@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <link rel="stylesheet" href="DragAndDropStyle.css">
+    <script src="DragAndDropScript.js" defer></script>
+</head>
+<body>
+    <h1>Fruity Basket</h1>
+    
+    <div class="draggableContainer" id="draggableContainer">
+        <div class="box" draggable="true" id="box1" data-name="Apple">Apple</div>
+        <div class="box" draggable="true" id="box2" data-name="Banana">Banana</div>
+        <div class="box" draggable="true" id="box3" data-name="Blackberry">Blackberry</div>
+        <div class="box" draggable="true" id="box4" data-name="Grapes">Grapes</div>
+        <div class="box" draggable="true" id="box5" data-name="Kiwi">Kiwi</div>
+        <div class="box" draggable="true" id="box6" data-name="Lemon">Lemon</div>
+        <div class="box" draggable="true" id="box7" data-name="Pear">Pear</div>
+        <div class="box" draggable="true" id="box8" data-name="Pineapple">Pineapple</div>
+        <div class="box" draggable="true" id="box9" data-name="Strawberry">Strawberry</div>
+        <div class="box" draggable="true" id="box10" data-name="Watermelon">Watermelon</div>
+    </div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box1">
+            <img src="Apple.jpeg">
+            <span class="item-label">Apple</span>
+        </div>
+        <div class="droppable" data-draggable-id="box2">
+            <img src="Banana.jpeg">
+            <span class="item-label">Banana</span>
+        </div>
+        <div class="droppable" data-draggable-id="box3">
+            <img src="Blackberry.jpeg">
+            <span class="item-label">Blackberry</span>
+        </div>
+        <div class="droppable" data-draggable-id="box4">
+            <img src="Grapes.jpeg">
+            <span class="item-label">Grapes</span>
+        </div>
+        <div class="droppable" data-draggable-id="box5">
+            <img src="Kiwi.jpeg">
+            <span class="item-label">Kiwi</span>
+        </div>
+        <div class="droppable" data-draggable-id="box6">
+            <img src="Lemon.jpeg">
+            <span class="item-label">Lemon</span>
+        </div>
+        <div class="droppable" data-draggable-id="box7">
+            <img src="Pear.jpeg">
+            <span class="item-label">Pear</span>
+        </div>
+        <div class="droppable" data-draggable-id="box8">
+            <img src="Pineapple.jpeg">
+            <span class="item-label">Pineapple</span>
+        </div>
+        <div class="droppable" data-draggable-id="box9">
+            <img src="Strawberry.jpeg">
+            <span class="item-label">Strawberry</span>
+        </div>
+        <div class="droppable" data-draggable-id="box10">
+            <img src="Watermelon.jpeg">
+            <span class="item-label">Watermelon</span>
+        </div>
+    </div>
+    
+    
+    
+      <div class="board">
+        Remarks:<p id="remarks"></p>
+        Score:<p id="scores"></p>
+      </div>
+      
+      </div><br>
+      <button class="reset" onclick="reset (event)">Retry</button>
+      <h2>
+        Direction: Drag the name of the fruit and drop it onto the corresponding picture. You will see "<b style="color: green;">Correct</b>" if the name matches the correct fruit and "<b style="color: red;">Wrong</b>" if it does not match the corresponding picture. Click the "Retry" button to restart the game.
+      </h2>
+    </body>
+        
+    
+    
+    </html>
+    
+
+
+       
+         
